@@ -13,14 +13,16 @@
 .mainheader {
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 10%;
     margin: 0px;
+    z-index: 1;
 }
 
 #logo {
     color: aliceblue;
     font-family: 'Lobster', cursive;
     float: left;
+    padding-left: 10%;
 }
 
 .mainheader ul {
@@ -29,6 +31,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    
 }
 
 .mainheader a {
@@ -38,7 +41,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Crimson Text', serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .mainheader li {
@@ -51,16 +54,19 @@
     margin: 0px;
     padding-top: 15px;
     z-index: 100;
+    height: auto;
 }
 
 .mainheader a:hover {
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 30px;
     background-color: gray;
 }
-
+*/
 /*header part ends*/
-
+#he{
+    width: 1282px;
+}
 #hero img {
     /* hero image*/
     width: 1287px;
@@ -83,8 +89,9 @@
 @media screen and (max-width:500px) {
     #hero img {
         padding-top: 150px;
+    
     }
-    #description {
+    #description p {
         top: 300px;
         padding-top: 200px;
         display: block;
@@ -95,7 +102,7 @@
 
 /* text on image*/
 
-#description {
+#description p{
     font-family: 'Crimson Text', serif;
     font-weight: 500;
     font-size: 20px;
@@ -107,17 +114,17 @@
 
 /* responsive  text on image*/
 
-@media screen and (max-width:450px) {
-    #description {
+@media screen and (max-width:500px) {
+  #description p{
         position: absolute;
         top: 50px;
         font-size: 15px;
         text-align: end;
     }
+    
 }
-
 #contentarea {
-    width: 100%;
+    width: auto;
 }
 
 #contentimg {
@@ -129,21 +136,17 @@
 }
 
 @media screen and (max-width:512px) {
-    #preview p {
+    #preview {
         padding-left: 1px;
         padding-right: 0px;
         text-align: center;
-        width: 100%;
+        width: 75%;
         height: auto;
         overflow: hidden;
+        border-style: inset;
     }
 }
 
-#preview {
-    width: 100%;
-    float: none;
-    height: auto;
-}
 
 #preview a {
     font-family: 'Crimson Text', serif;
@@ -152,18 +155,25 @@
 }
 
 #preview {
-    margin: 20px auto;
+    padding: 10px 5% 10px 5%;
     font-family: 'Crimson Text', serif;
     line-height: 25px;
     letter-spacing: 2px;
     text-align: justify;
     color: rgb(27, 26, 26);
     display: block;
-}
+    border-style: outset;
+    width: auto;
+    float: none;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(240, 239, 234);  
+}  
 
 /*section one start*/
 
-#mainsec {
+#section1, #section2, #section3, #section4 {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 1rem;
@@ -172,14 +182,6 @@
     color: #333;
 }
 
-#secsection, #thirdsection {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 1rem;
-    font-family: 'Crimson Text', serif;
-    text-align: center;
-    color: #333;
-}
 
 .first {
     text-align: justify;
@@ -195,6 +197,8 @@
 .first img {
     display: block;
     display: flex;
+    width: 270px;
+    height: 150px;
 }
 
 .first a:hover {
@@ -203,7 +207,7 @@
     background-color: rgb(3, 6, 44);
 }
 
-#mainsec h3, #contentarea h3 {
+#contentarea h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
     text-shadow: rgb(87, 84, 84);
@@ -211,13 +215,13 @@
     font-size: 30px;
     text-decoration-style: wavy;
 }
-
-#secsection h3, #thirdsection h3 {
+#section1 h3, #section2 h3, #section3 h3, #section4 h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
     text-shadow: rgb(87, 84, 84);
     color: black;
     font-size: 30px;
+    text-decoration-style: wavy;
 }
 
 .grid {
@@ -281,7 +285,7 @@
     color: white;
 }
 
-.footer {
+#footer {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -321,24 +325,55 @@
         align-items: center;
     }
 }
-    /*reponsive of nav bar to 350px*/
+    /*reponsive of nav bar to 500px*/
     @media screen and (max-width:500px) {
         .navbar li a {
             float: none;
             display: block;
             height: 10px;
+            font-size: 15px;
+            justify-content: center;
         }
+        .mainheader a:hover {
+            font-size: 20px;
+         }
         #logo {
             float: none;
+            padding: 2%;
         }
     }
+    @media screen and (max-width:690px){
+        .navbar li a {
+            font-size: 12px;
+        }
+        #description p{
+          
+            font-size: 15px;
+            
+        }
+        
+    }
+
+  @media screen and (min-width: 720px){
+    .navbar li a {
+        float: none;
+        display: inline;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .mainheader a:hover {
+        font-size: 20px;
+     }
+   
+  }  
     .booking{
         color:white;
         font-family:'Crimson Text', serif;
         background-color: #333;
         font-size: 15px;
-       
+        align-items: center;
     }
-    #form{
-        background-image: -
-    }
+    
+
+
+
