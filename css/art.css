@@ -20,13 +20,7 @@
     float: left;
     
 }
-.mainheader{
-    position: fixed;
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  
-}
+
 .mainheader ul{
     
     list-style-type: none;
@@ -80,7 +74,7 @@
 
     }
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:500px){
     #hero img{
         padding-top: 150px;
     }
@@ -103,7 +97,7 @@
         bottom: 300px;
         right: 16px;
     }
-    /* responsive for an text on image*/
+    /* responsive  text on image*/
 @media screen and (max-width:450px){
    #description{
     position: absolute;
@@ -299,11 +293,28 @@ width: 100%;
          .first{
              flex:100%;
              max-width: 100%;
+             justify-content: center;
+             text-align: justify;
+             width: [width of img];               
+             display: block;  
+
          }
+        
+         .first img{
+            display: block;
+            margin: 0 auto;
+         }
+        .first a{
+            padding-left: auto;
+            padding-right: auto;
+            text-align: center;
+                  }
+         .grid{
+             align-items: center;
      }
 
      /*reponsive of nav bar to 350px*/
-     @media screen and (max-width:350px){
+     @media screen and (max-width:500px){
          .navbar li a{
             float: none;
             display: block; 
@@ -314,4 +325,5 @@ width: 100%;
              float:none;
          }
      }
+    
     
