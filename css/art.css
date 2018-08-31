@@ -62,7 +62,7 @@
     font-size: 30px;
     background-color: gray;
 }
-*/
+
 /*header part ends*/
 #he{
     width: 1282px;
@@ -185,7 +185,7 @@
 
 .first {
     text-align: justify;
-    width: [width of img];
+    /*width: [width of img];*/
 }
 
 .first a {
@@ -210,15 +210,13 @@
 #contentarea h3 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    text-shadow: rgb(87, 84, 84);
     color: black;
     font-size: 30px;
     text-decoration-style: wavy;
 }
 #section1 h3, #section2 h3, #section3 h3, #section4 h3 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Crimson Text', serif;
     text-align: center;
-    text-shadow: rgb(87, 84, 84);
     color: black;
     font-size: 30px;
     text-decoration-style: wavy;
@@ -309,7 +307,7 @@
         max-width: 100%;
         justify-content: center;
         text-align: justify;
-        width: [width of img];
+        /*width: [width of img];*/
         display: block;
     }
     .first img {
@@ -317,8 +315,8 @@
         margin: 0 auto;
     }
     .first a {
-        padding-left: auto;
-        padding-right: auto;
+       /* padding-left: auto;
+        padding-right: auto;*/
         text-align: center;
     }
     .grid {
@@ -372,8 +370,4 @@
         background-color: #333;
         font-size: 15px;
         align-items: center;
-    }
-    
-
-
-
+}
